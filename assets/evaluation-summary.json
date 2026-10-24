@@ -1,0 +1,135 @@
+{
+  "description": "Curated summary from supplied original exports. Owner details, database rows and execution identifiers omitted. Historical results, not current-release certification.",
+  "runs": [
+    {
+      "run": {
+        "id": "092b57d5db734d49b9c021fdd9d41019",
+        "suite": "benchmark",
+        "model": "gemini-2.5-flash",
+        "status": "completed",
+        "dataset": "iam_data_dev",
+        "benchmark_digest": "b33e9b84e8299bce4bf4677f34deb6cabf820224afe0bd6fe08339de3a560ac4",
+        "benchmark_version": "1",
+        "revision": "133c3074c5b38a719359b6b59b8daa8891d3d201",
+        "judge": true,
+        "created_at": "2026-10-13T04:14:46.060831+00:00"
+      },
+      "metrics": {
+        "cases_completed": 132,
+        "cases_total": 132,
+        "passed": 129,
+        "errors": 2,
+        "assertion_pass_rate": 0.9954648526077098,
+        "mean_latency_ms": 8979.836031659099,
+        "human_reviewed": 0,
+        "release_gate": "awaiting_review",
+        "authorization_pass_rate": 1,
+        "concepts_pass_rate": 1,
+        "data_intent_pass_rate": 0.9917355371900827,
+        "entity_filter_pass_rate": 1,
+        "no_query_on_denial_pass_rate": 1,
+        "source_attribution_pass_rate": 1,
+        "task_completion_pass_rate": 0.983739837398374,
+        "trajectory_pass_rate": 0.9917355371900827,
+        "validation_before_execution_pass_rate": 1,
+        "judge_correctness": 4.983471074380165,
+        "judge_groundedness": 4.983471074380165,
+        "judge_coherence": 5,
+        "judge_fluency": 5,
+        "tokens": 2788732,
+        "judge_tokens": 476244,
+        "bigquery_bytes": 3456624,
+        "judge_errors": 0,
+        "estimated_cost_usd": null
+      },
+      "failed_cases": [
+        {
+          "case_id": "ad_group_churn_rate_2",
+          "question": "Show ad group churn rate for user12.",
+          "failed_checks": [
+            "task_completion"
+          ],
+          "error": {
+            "code": "plan_rejected",
+            "type": "WorkflowError"
+          }
+        },
+        {
+          "case_id": "ad_volume_spikes_2",
+          "question": "Show ad volume spikes for user12.",
+          "failed_checks": [
+            "task_completion"
+          ],
+          "error": {
+            "code": "plan_rejected",
+            "type": "WorkflowError"
+          }
+        },
+        {
+          "case_id": "general_5",
+          "question": "Why is stale privileged access risky?",
+          "failed_checks": [
+            "data_intent",
+            "trajectory"
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "run": {
+        "id": "ad39c9fee9724cc0858bf9d40f2a505c",
+        "suite": "smoke",
+        "model": "gemini-2.5-flash",
+        "status": "completed",
+        "dataset": "iam_data_dev",
+        "benchmark_digest": "47074a41a991ab4a6945e57e2840c9dce29a0e516f3d54e78c0f16fa20185a03",
+        "benchmark_version": "1",
+        "revision": "133c3074c5b38a719359b6b59b8daa8891d3d201",
+        "judge": true,
+        "created_at": "2026-10-13T04:01:42.545373+00:00"
+      },
+      "metrics": {
+        "cases_completed": 8,
+        "cases_total": 8,
+        "passed": 7,
+        "errors": 1,
+        "assertion_pass_rate": 0.9782608695652174,
+        "mean_latency_ms": 11503.209047499986,
+        "human_reviewed": 0,
+        "release_gate": "awaiting_review",
+        "authorization_pass_rate": 1,
+        "concepts_pass_rate": 1,
+        "data_intent_pass_rate": 1,
+        "entity_filter_pass_rate": 1,
+        "no_query_on_denial_pass_rate": 1,
+        "source_attribution_pass_rate": 1,
+        "task_completion_pass_rate": 0.8571428571428571,
+        "trajectory_pass_rate": 1,
+        "validation_before_execution_pass_rate": 1,
+        "judge_correctness": 5,
+        "judge_groundedness": 5,
+        "judge_coherence": 5,
+        "judge_fluency": 5,
+        "tokens": 183820,
+        "judge_tokens": 10155,
+        "bigquery_bytes": 3479,
+        "judge_errors": 0,
+        "estimated_cost_usd": null
+      },
+      "failed_cases": [
+        {
+          "case_id": "typo_ranking",
+          "question": "whcih usres have higest riks scoers?",
+          "failed_checks": [
+            "task_completion"
+          ],
+          "error": {
+            "code": "plan_unresolved",
+            "type": "WorkflowError"
+          }
+        }
+      ]
+    }
+  ]
+}
